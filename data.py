@@ -48,6 +48,6 @@ paises = [
         "capital" : "Pekín",
         "moneda" : "Yuan",
         "poblacion" : 1412000000,
-        "superficie" : 9596961
+        "superficie" : 959696
     }
 ]
