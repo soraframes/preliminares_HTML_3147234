@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1 class="text-center">Lista de paises</h1>
+
+    <table class="table table-stripped">
+        <thead class="table-dark">
+            <tr>
+                <th>Nombre</th>
+                <th>Capital</th>
+                <th>Moneda</th>
+                <th>Poblacion</th>
+                <th>Superficie</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for pais in paises %} <!--Esto sirve para crear bloques de función de Pyhton-->
+            <tr>
+                <td class="text-success fw-bold">{{ pais.nombre }}</td>
+                <td>{{ pais.capital }}</td>
+                <td class="bg-success text-light">{{ pais.moneda }}</td>
+                <td>{{ pais.poblacion }}</td>
+                <td>{{ pais.superficie }}</td>
+            </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+</body>
+</html>
